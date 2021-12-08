@@ -1,5 +1,5 @@
-Dmitriev Ivan Petrovich 12.5.2003 76 1 PI-11 4.3
-Anatolyevich Ivan Petrovich 12.5.2003 76 1 PI-11 4.3
-Petrovich Ivan Petrovich 12.5.2003 76 1 PI-11 4.3
-Olegovich Ivan Petrovich 12.5.2003 76 1 PI-11 4.3
-Pisyulkin Ivan Petrovich 12.5.2003 76 1 PI-11 4.3
+Dmitriev Ivan Petrovich 12.5.2003 76 5 PI-11 4.3
+Anatolyevich Ivan Petrovich 12.5.2003 76 5 PI-11 4.3
+Petrovich Ivan Petrovich 12.5.2003 76 5 PI-11 4.3
+Olegovich Ivan Petrovich 12.5.2003 76 5 PI-11 4.3
+Pisyulkin Ivan Petrovich 12.5.2003 76 5 PI-11 4.3
