@@ -42,26 +42,36 @@ pure_guys=[]
 for x in students:
   if x[-3]=='5':
     del x[4]
-    x[-3]=x[-2]
+    x[-3]=x[-2][:2]
     pure_guys.append(x)
+
 num_gr=math.ceil(len(pure_guys)/5)
+newpure_guys=[]
+for i in range(len(pure_guys)):
+    smth = random.randint(0,len(pure_guys)-1)
+    newpure_guys.append(pure_guys[smth])
+    del pure_guys[smth]
+
+pure_guys=newpure_guys
 num=0
 k=0
 for x in pure_guys:
-    if k==5 and num<num_gr:
-        k=0
+    if k==5:
         num+=1
-    if k<5:
-        x[-2] = i
+        k=0
+    if k<5 and num<num_gr:
+        x[-2] = num+1
+        k += 1
 
-
-"""for x in pure_guys:
-    k = 0
-    for i in range (num_gr):
-        while k<4:
-            x[-2]=i
-            k+=1
-"""
-print(pure_guys)
 puretable=PrettyTable()
 puretable.field_names = ['Фамилия', 'Имя', 'Отчество', 'Дата рождения', 'Специальность', 'Группа', 'Средний балл']
+puretable.add_rows(pure_guys)
+a=0
+b=5
+m=20
+for i in range(num_gr):
+    print(f'Date:{m}.05.2021')
+    print(puretable[a:b])
+    a+=5
+    b+=5
+    m+=1
