@@ -28,4 +28,15 @@ students.sort(key = sortbySurname)
 students.sort(key = sortbySpecialn)
 
 mytable.add_rows(students)
-print(mytable)
+#print(mytable)
+
+pure_guys=[]
+for x in students:
+  if x[-3]=='5':
+    pure_guys.append(x)
+for x in pure_guys:
+  del x[4]
+  del x[4]
+print(pure_guys)
+puretable=PrettyTable()
+puretable.field_names = ['Фамилия', 'Имя', 'Отчество', 'Дата рождения', 'Специальность', 'Группа', 'Средний балл']
