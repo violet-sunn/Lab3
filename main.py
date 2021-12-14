@@ -28,6 +28,8 @@ lines1 = lines1.split('\n')
 for x in lines1:
     ism.append(x.split())
 
+aif.close()
+isf.close()
 students = aim + ism
 
 students.sort(key=sortbySurname)
